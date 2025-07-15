@@ -9,7 +9,7 @@ const Landing: React.FC = () => {
     <div className="min-h-screen w-full flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-x-hidden">
 
      
-      <h1 className="text-5xl font-extrabold text-gray-900 mb-12 text-center">
+      <h1 className="text-5xl font-extrabold text-gray-900 mb-12 text-center "rounded-sm", "rounded-lg", "rounded-full"">
         Welcome to Our Airbnb Clone
       </h1>
 
