@@ -2,41 +2,31 @@ import Card from "@/components/Card";
 import Button from "@/components/Button"; // Import the Button component
 import React from 'react';
 
-const Landing: React.FC =  () => {
+
+const Landing: React.FC = () => {
   return (
-    <div className="flex flex-col items-center p-8"> {/* Increased padding for more space */}
-      <h1 className=" text-xl font-extralight mb-8">Landing Page</h1> {/* Increased margin-bottom */}
+    
+    <div className="min-h-screen w-full flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-x-hidden">
 
-      {/* Displaying Card(s) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+     
+      <h1 className="text-5xl font-extrabold text-gray-900 mb-12 text-center">
+        Welcome to Our Airbnb Clone
+      </h1>
+
+     
+      <h2 className="text-3xl font-bold text-gray-800 mb-8">Featured Properties</h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16 place-items-center">
         <Card />
-        <Card />
-        {/* You can add more cards if you duplicated them in the previous task */}
+       
       </div>
-
-      <h2 className="text-2xl font-semibold mb-6">Button Examples:</h2>
-
-      {/* Button Sizes */}
-      <div className="flex flex-col md:flex-row gap-4 mb-6">
-        <Button title="Small Button" styles="py-1 px-2 text-sm" />
-        <Button title="Medium Button" styles="py-2 px-4 text-base" />
-        <Button title="Large Button" styles="py-3 px-6 text-lg" />
-      </div>
-
-      {/* Button Shapes */}
-      <div className="flex flex-col md:flex-row gap-4 mb-6">
-        <Button title="Square Button" styles="rounded-sm" />
-        <Button title="Rounded Button" styles="rounded-md" />
-        <Button title="Full Rounded Button" styles="rounded-full" />
-      </div>
-
-      {/* Combined Styles */}
-      <div className="flex flex-col md:flex-row gap-4">
-        <Button title="Large Full" styles="py-3 px-6 text-lg rounded-full" />
-        <Button title="Small Round" styles="py-1 px-2 text-sm rounded-md" />
-      </div>
+      <div className="flex md:flex-row justify-center items-center mb-8 flex-wrap">
+          <Button title="Small Button" styles="py-1 px-3 text-sm rounded" />
+        </div>
+      
 
     </div>
-  )
-}
+  );
+};
+
 export default Landing;
